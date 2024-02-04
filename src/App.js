@@ -211,7 +211,7 @@ function displayAbout () {
   return (
     <div className="AboutText">
       <a className="Text">
-        Hello, my name is Austin Norquist! I was born in Modesto, California and graduated from Beyer High School in 2018. I went to Modesto Junior College from 2019 to 2020 and transferred to CSU Chico in 2021. My planned graduation date is May 2024 with a Bachelor's in Computer Science. I am interested in app and web development and I am open to any type of work! My hobbies include: riding my bike, discovering new music, walking my dog, and spending time with my family. 
+        I could easily knock Delbert out if I wanted to 
       </a>
     </div>
   );
