@@ -41,8 +41,33 @@ function displayExperience () {
 }
 
 function displayProjects() {
-  return (
+  return (    
     <div className="ProjectBody">
+      <div style={{marginTop:"2%"}} className="ProjectInfo">
+        <div className="ProjectTitles">
+          <a href="https://github.com/AustinNorquist/ASLToText" target="_blank" rel="noopener noreferrer" className="ProjectText">
+            ASL to Text Translator
+          </a>
+        </div>
+        <div style={{textAlign:"right"}} className="Dates">
+          <a>
+            January 2024 - Current
+          </a>
+        </div>
+      </div>
+
+      <div className="ProjectInfo">
+        <div className="ProjectTech">
+          Python, OpenCV, MediaPipe
+        </div>
+      </div>
+
+      <div className="ProjectDescription">
+        <li>
+          A real-time American Sign Language(ASL) to text translator leveraging OpenCV and MediaPipe for hand gesture detection.
+        </li>
+      </div>
+
       <div style={{marginTop:"2%"}} className="ProjectInfo">
         <div className="ProjectTitles">
           <a href="https://github.com/AustinNorquist/WhereIsThis" target="_blank" rel="noopener noreferrer" className="ProjectText">
@@ -64,50 +89,7 @@ function displayProjects() {
 
       <div className="ProjectDescription">
         <li>
-          Created a fully functional app that allows users to play a game, where they guess locations of various photos.
-        </li>
-        <li>
-          Maximized Flutter’s capabilities by creating a consistent experience for iOS and Android devices.
-        </li>
-        <li>
-          Utilized Google Maps plugin to get the user’s exact location and place pins during the games.
-        </li>
-        <li>
-          Primary feature which allowed users to use their camera to take photos and upload them in real time.
-        </li>
-      </div>
-
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a href="https://github.com/AustinNorquist/WhereIsThis" target="_blank" rel="noopener noreferrer" className="ProjectText">
-            LoL Name Reserver
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            June 2023 - July 2023
-          </a>
-        </div>
-      </div>
-
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          React, Supabase, Tailwind CSS, Github 
-        </div>
-      </div>
-
-      <div className="ProjectDescription">
-        <li>
-          Developed a web application using ReactJS, following industry best practices. 
-        </li>
-        <li>
-          Integrated Supabase to allow user sign-in, registration, and seamless data management, for full functionality.
-        </li>
-        <li>
-          Leveraged the Riot API to retrieve real-time data to give the users an optimal experience.
-        </li>
-        <li>
-          Enabled users to add desired in-game usernames to a watchlist, updating when names become available.
+        A fully functional Android, iOS, and web game, where users can guess the location of random, user-submitted photos and receive a score based on accuracy.
         </li>
       </div>
 
@@ -126,22 +108,13 @@ function displayProjects() {
 
       <div className="ProjectInfo">
         <div className="ProjectTech">
-          C++
+          C++, OpenMP
         </div>
       </div>
 
       <div className="ProjectDescription">
         <li>
-        Implemented the Forward Steps of the Backpropagation Algorithm for a Convolutional Neural Network.
-        </li>
-        <li>
-          Using objects in C++, I was able to handle all steps necessary to output the result of each image.
-        </li>
-        <li>
-          Thoroughly validated CNN by meticulously tracing tests manually, ensuring accuracy.
-        </li>
-        <li>
-          Constructed convolutional, pooling, and fully connected layers as reusable C++ classes.
+          A CNN in C++ with object-oriented design, achieving significant computational speedup through the implementation of OpenMP.
         </li>
       </div>
 
@@ -167,16 +140,7 @@ function displayProjects() {
 
       <div className="ProjectDescription">
         <li>
-          Spearheaded a group project that simulated real-life continuous integration and deployment, working in sprints.
-        </li>
-        <li>
-          Utilized scrum meetings to ensure all individual tasks were something that worked towards M.V.P.
-        </li>
-        <li>
-          Collaborated to create a real-time social media application that enabled users to add friends and post activities.
-        </li>
-        <li>
-          Maintained efficient team workflows by utilizing industry-standard version control systems such as Git.
+          A collaborative project where we built a social media app that allowed users to interact in real- time in the form of a message board.
         </li>
       </div>
     </div>
@@ -185,7 +149,7 @@ function displayProjects() {
 
 function displayEducation () {
   return (
-<div className="ProjectBody">
+    <div className="ProjectBody">
       <div style={{marginTop:"2%"}} className="ProjectInfo">
         <div className="ProjectTitles">
           <a className="Employer">
@@ -203,6 +167,24 @@ function displayEducation () {
           Bachelor of Science in Computer Science
         </div>
       </div>
+
+      <div style={{marginTop:"2%"}} className="ProjectInfo">
+        <div className="ProjectTitles">
+          <a className="Employer">
+            California State University, Chico
+          </a>
+        </div>
+        <div style={{textAlign:"right"}} className="Dates">
+          <a>
+            May 2025
+          </a>
+        </div>
+      </div>
+      <div className="ProjectInfo">
+        <div className="ProjectTech">
+          Master of Science in Computer Science
+        </div>
+      </div>
     </div>
   );
 }
@@ -211,7 +193,7 @@ function displayAbout () {
   return (
     <div className="AboutText">
       <a className="Text">
-        I could easily knock Delbert out if I wanted to 
+        I am pursuing a Bachelor of Science degree in Computer Science at California State University, Chico, with an expected graduation date of May 2024 and a Master of Science in Computer Science, with an expected graduation date of May 2025. I am interested in software engineering, machine learning, high performance computing, and computer vision. I have developed skills in C/C++, R, Go, and React.js. In addition to my academic studies, I work as a senior brand ambassador at American Eagle Outfitters, where I demonstrate leadership, communication, and customer service skills.
       </a>
     </div>
   );
