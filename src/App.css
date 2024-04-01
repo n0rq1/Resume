@@ -173,3 +173,50 @@
   font-size: 24px;
   text-shadow: 1px 1px 5px rgb(117, 126, 255);
 }
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 10px; 
+  }
+
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Name {
+    margin-top: 10px;
+  }
+
+  .Icon {
+    margin-top: 10px;
+  }
+
+  .Body {
+    flex-direction: column;
+  }
+
+  .BodyHeader {
+    margin: 10px 0;
+  }
+
+  .ProjectBody {
+    padding: 10px;
+  }
+
+  .ProjectInfo {
+    margin: 10px 0;
+  }
+
+  .ProjectTitles {
+    text-align: center;
+  }
+
+  .ProjectTech {
+    text-align: center;
+  }
+
+  .ProjectDescription {
+    padding: 10px;
+  }
+}
