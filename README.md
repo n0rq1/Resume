@@ -1,1 +1,1 @@
-https://austinnorquist.github.io/Resume/
+anorquist.dev
