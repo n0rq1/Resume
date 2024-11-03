@@ -191,7 +191,7 @@ function displayEducation () {
 
 function displayAbout () {
   return (
-    <div className="AboutText">
+    <div className="ProjectBody">
       <a className="Text">
         I am pursuing a Bachelor of Science degree in Computer Science at California State University, Chico, with an expected graduation date of May 2024 and a Master of Science in Computer Science, with an expected graduation date of May 2025. I am interested in software engineering, machine learning, high performance computing, and computer vision. I have developed skills in C/C++, R, Go, and React.js. In addition to my academic studies, I work as a senior brand ambassador at American Eagle Outfitters, where I demonstrate leadership, communication, and customer service skills.
       </a>
@@ -242,36 +242,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Navbar">
-        <img className="Headshot" src={headshot} alt="Headshot"></img> 
-        <h1 className="Name">Austin Norquist</h1>
-        <a href="https://github.com/austinnorquist" target="_blank" rel="noopener noreferrer">
-          <img className="Icon" src={githubIcon} alt="GitHub"></img>
-        </a>     
-        <a href="https://www.linkedin.com/in/austin-norquist/" target="_blank" rel="noopener noreferrer">
-          <img className="Icon" src={linkedinIcon} alt="LinkedIn"></img>
-        </a>
-        <a href="https://open.spotify.com/user/norquie?si=f99b2dec0b224f0a" target="_blank" rel="noopener noreferrer">
-          <img className="Icon" src={spotifyIcon} alt="Spotify"></img>
-        </a>
-      </div>
-
-      <div className="Body">
-        <a onClick={onPressExperience} className="BodyHeader">
-          Experience
-        </a>       
-        <a onClick={onPressProjects} className="BodyHeader">
-          Projects
-        </a>
-        <a onClick={onPressEducation} className="BodyHeader">
-          Education
-        </a>
-      </div>
-
-      {initialAbout && displayAbout()}
-      {showExperience && displayExperience()}
-      {showProjects && displayProjects()}
-      {showEducation && displayEducation()}
+      <a>
+        safsadfasf  
+      </a>
     </div>
   );
 }
