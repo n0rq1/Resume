@@ -1,250 +1,53 @@
-import githubIcon from './images/github-test.png';
-import headshot from './images/headshot.jpeg';
-import linkedinIcon from './images/linkedin-icon.png';
-import spotifyIcon from './images/spotify-icon.png'
-import React, {useState} from 'react';
+import Spline from '@splinetool/react-spline';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-
-function displayExperience () {
-  return (
-    <div className="ProjectBody">
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a className="Employer">
-            California State University, Chico
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            January 2024 - May 2024
-          </a>
-        </div>
-      </div>
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Grader
-        </div>
-      </div>
-      <div className="ProjectDescription">
-        <li>
-          Assessed bi-weekly assignments for Dr. Sam Siewert’s Applied Computer Vision course.
-        </li>
-        <li>
-          Learned the curriculum of the graduate-level course I was responsible for grading, to accurately assign grades.
-        </li>
-        <li>
-          Reviewed written reports and analyzed code thoroughly, while strictly adhering to the grading rubric.
-        </li>
-      </div>
-    </div>
-  );
-}
-
-function displayProjects() {
-  return (    
-    <div className="ProjectBody">
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a href="https://github.com/AustinNorquist/ASLToText" target="_blank" rel="noopener noreferrer" className="ProjectText">
-            ASL to Text Translator
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            January 2024 - Current
-          </a>
-        </div>
-      </div>
-
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Python, OpenCV, MediaPipe
-        </div>
-      </div>
-
-      <div className="ProjectDescription">
-        <li>
-          A real-time American Sign Language(ASL) to text translator leveraging OpenCV and MediaPipe for hand gesture detection.
-        </li>
-      </div>
-
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a href="https://github.com/AustinNorquist/WhereIsThis" target="_blank" rel="noopener noreferrer" className="ProjectText">
-            Where Is This?
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            October 2023 - December 2023
-          </a>
-        </div>
-      </div>
-
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Flutter, Firebase, Github 
-        </div>
-      </div>
-
-      <div className="ProjectDescription">
-        <li>
-        A fully functional Android, iOS, and web game, where users can guess the location of random, user-submitted photos and receive a score based on accuracy.
-        </li>
-      </div>
-
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a href="https://github.com/AustinNorquist/WhereIsThis" target="_blank" rel="noopener noreferrer" className="ProjectText">
-            Convolutional Neural Network
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            April 2023 - May 2023
-          </a>
-        </div>
-      </div>
-
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          C++, OpenMP
-        </div>
-      </div>
-
-      <div className="ProjectDescription">
-        <li>
-          A CNN in C++ with object-oriented design, achieving significant computational speedup through the implementation of OpenMP.
-        </li>
-      </div>
-
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a href="https://github.com/AustinNorquist/WhereIsThis" target="_blank" rel="noopener noreferrer" className="ProjectText">
-            Group Activity!
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            January 2023 - May 2023
-          </a>
-        </div>
-
-      </div>
-
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Python, JavaScript, HTML, CSS, PHP, Selenium, Github
-        </div>
-      </div>
-
-      <div className="ProjectDescription">
-        <li>
-          A collaborative project where we built a social media app that allowed users to interact in real- time in the form of a message board.
-        </li>
-      </div>
-    </div>
-  );
-}
-
-function displayEducation () {
-  return (
-    <div className="ProjectBody">
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a className="Employer">
-            California State University, Chico
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            May 2024
-          </a>
-        </div>
-      </div>
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Bachelor of Science in Computer Science
-        </div>
-      </div>
-
-      <div style={{marginTop:"2%"}} className="ProjectInfo">
-        <div className="ProjectTitles">
-          <a className="Employer">
-            California State University, Chico
-          </a>
-        </div>
-        <div style={{textAlign:"right"}} className="Dates">
-          <a>
-            May 2025
-          </a>
-        </div>
-      </div>
-      <div className="ProjectInfo">
-        <div className="ProjectTech">
-          Master of Science in Computer Science
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function displayAbout () {
-  return (
-    <div className="ProjectBody">
-      <a className="Text">
-        I am pursuing a Bachelor of Science degree in Computer Science at California State University, Chico, with an expected graduation date of May 2024 and a Master of Science in Computer Science, with an expected graduation date of May 2025. I am interested in software engineering, machine learning, high performance computing, and computer vision. I have developed skills in C/C++, R, Go, and React.js. In addition to my academic studies, I work as a senior brand ambassador at American Eagle Outfitters, where I demonstrate leadership, communication, and customer service skills.
-      </a>
-    </div>
-  );
-}
-
+import logo from './images/logo.png'
 
 function App() {
+  const [time, setTime] = useState('');
 
-  const [initialAbout, setShowAbout] = useState(true);
-  const [showExperience, setShowExperience] = useState(false);
-  const [showProjects, setShowProjects] = useState(false);
-  const [showEducation, setShowEducation] = useState(false);
+  // Function to update time in PST
+  useEffect(() => {
+    const updateTime = () => {
+      const options = { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', second: '2-digit', weekday: 'short', month: 'short', day: 'numeric' };
+      const pstTime = new Date().toLocaleString('en-US', options);
+      setTime(pstTime);
+    };
 
-  function onPressExperience() {
-    if (showExperience == true) {
-      setShowExperience(false)
-    }else{
-      setShowAbout(false);
-      setShowExperience(true);
-      setShowProjects(false);
-      setShowEducation(false); 
-    }
-  }
+    updateTime(); // Initial call
+    const interval = setInterval(updateTime, 1000); // Update every second
 
-  function onPressProjects() {
-    if (showProjects == true) {
-      setShowProjects(false)
-    }else{
-      setShowAbout(false);
-      setShowExperience(false);
-      setShowProjects(true);
-      setShowEducation(false); 
-    }
-  }
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
-  function onPressEducation() {
-    if (showEducation == true) {
-      setShowEducation(false)
-    }else{
-      setShowAbout(false);
-      setShowExperience(false);
-      setShowProjects(false);
-      setShowEducation(true); 
-    }
-  }
+  useEffect(() => {
+    const resizeBackground = () => {
+      document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+    };
+
+    resizeBackground();
+    window.addEventListener('resize', resizeBackground);
+
+    return () => window.removeEventListener('resize', resizeBackground);
+  }, []);
 
   return (
-    <div className="App">
-      <a>
-        safsadfasf  
-      </a>
+    <div className="spline-background">
+      <Spline scene="https://prod.spline.design/7QG5CF4LfbZXdMLj/scene.splinecode" />
+      <div className="taskbar">
+        <div className="start-button">
+          <img src={logo} alt="Start Logo" className="taskbar-icon" />
+        </div>
+
+        <div className="taskbar-icons">
+          <div className="taskbar-icon">🖥️</div>
+          <div className="taskbar-icon">🌎</div>
+          <div className="taskbar-icon">📂</div>
+        </div>
+
+        {/* Clock with real-time PST update */}
+        <div className="taskbar-clock">{time}</div>
+      </div>
     </div>
   );
 }
