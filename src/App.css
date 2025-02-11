@@ -49,16 +49,18 @@
   object-fit: contain;
 }
 
-/* Centered Taskbar Icons */
+.start-button:hover{
+  opacity: 50%;
+}
+
 .taskbar-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  flex-grow: 1;  /* Makes icons stay in the center */
-}
+  flex-grow: 1;
+} 
 
-/* Individual Taskbar Icon */
 .taskbar-icon {
   width: 35px;
   height: 35px;
@@ -76,16 +78,48 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Clock (Fixed to the Right) */
 .taskbar-clock {
   color: white;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
-  width: 120px; /* Set a fixed width */
-  flex-shrink: 0; /* Prevents the clock from shrinking */
-  margin-right: 10px; /* Adds spacing from the right edge */
+  width: 120px; 
+  flex-shrink: 0;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.desktop-grid {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 20px;
+}
+
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.desktop-icon:hover{
+  background-color: rgba(0, 0, 0, 0.326);
+}
+
+.desktop-icon img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 5px;
+}
+
+.desktop-icon span {
+  color: white;
+  font-size: 14px;
 }

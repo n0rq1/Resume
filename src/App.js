@@ -2,11 +2,15 @@ import Spline from '@splinetool/react-spline';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import logo from './images/logo.png'
+import textIcon from './images/textfile.png'
+import gradIcon from './images/gradicon.png'
+import expIcon from './images/expIcon.png'
+import researchIcon from './images/researchIcon.png'
+import contactIcon from './images/contactIcon.png'
 
 function App() {
   const [time, setTime] = useState('');
 
-  // Function to update time in PST
   useEffect(() => {
     const updateTime = () => {
       const options = { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', second: '2-digit', weekday: 'short', month: 'short', day: 'numeric' };
@@ -34,6 +38,35 @@ function App() {
   return (
     <div className="spline-background">
       <Spline scene="https://prod.spline.design/7QG5CF4LfbZXdMLj/scene.splinecode" />
+
+      <div className="desktop-grid">
+        <div className="desktop-icon">
+          <img src={textIcon} alt="Text File" />
+          <span>Resume</span>
+        </div>
+
+        <div className="desktop-icon">
+          <img src={gradIcon} alt="Text File" />
+          <span>Education</span>
+        </div>
+
+        <div className="desktop-icon">
+          <img src={expIcon} alt="Text File" />
+          <span>Experience</span>
+        </div>
+
+        <div className="desktop-icon">
+          <img src={researchIcon} alt="Text File" />
+          <span>Research</span>
+        </div>
+
+        <div className="desktop-icon">
+          <img src={contactIcon} alt="Text File" />
+          <span>Contact</span>
+        </div>
+      </div>
+
+      <img src={textIcon} alt="Text File Icon" className="DesktopIcon"/>
       <div className="taskbar">
         <div className="start-button">
           <img src={logo} alt="Start Logo" className="taskbar-icon" />
@@ -44,8 +77,6 @@ function App() {
           <div className="taskbar-icon">🌎</div>
           <div className="taskbar-icon">📂</div>
         </div>
-
-        {/* Clock with real-time PST update */}
         <div className="taskbar-clock">{time}</div>
       </div>
     </div>
