@@ -13,6 +13,7 @@ import githubIcon from './images/github-test.png';
 import emailIcon from './images/email.webp';
 import squareIcon from './images/squares.png';
 import headshot from './images/headshot.jpeg';
+import capstoneIcon from './images/capstone.png';
 
 function App() {
   const [time, setTime] = useState('');
@@ -82,6 +83,12 @@ function App() {
           <img src={emailIcon} alt="Contact" />
           <span>contact.txt</span>
         </div>
+
+        <div className="desktop-icon" onClick={() => openApp('capstone')}>
+          <img src={capstoneIcon} alt="Contact" />
+          <span>capstone.pdf</span>
+        </div>
+
       </div>
 
       <div className="taskbar">
@@ -97,6 +104,7 @@ function App() {
               {app === 'education' && <img src={gradIcon} alt="Education App" />}
               {app === 'experience' && <img src={expIcon} alt="Experience App" />}
               {app === 'research' && <img src={researchIcon} alt="Research App" />}
+              {app === 'capstone' && <img src={capstoneIcon} alt="Capstone App" />}
             </div>
           ))}
         </div>

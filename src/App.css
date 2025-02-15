@@ -95,14 +95,14 @@
 }
 
 .desktop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px; /* Space between icons */
   position: absolute;
-  top: 5%;
-  left: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  gap: 10px;
+  top: 100px;
+  left: 50px;
 }
+
 
 .desktop-icon {
   display: flex;
