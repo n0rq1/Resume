@@ -14,6 +14,7 @@ import emailIcon from './images/email.webp';
 import squareIcon from './images/squares.png';
 import headshot from './images/headshot.jpeg';
 import capstoneIcon from './images/capstone.png';
+import capstone from './images/capstonePic.png';
 
 function App() {
   const [time, setTime] = useState('');
@@ -187,6 +188,20 @@ function App() {
           </div>
         </div>
       )}
+
+      {openApps.includes('capstone') && (
+        <div className="capstone-file">
+          <div className="education-file-header">
+            <span>capstone.pdf - Image Viewer</span>
+            <img src={closeIcon} alt="Close" className="close-icon" onClick={() => closeApp('capstone')} />
+          </div>
+
+          <div className="capstone-file-content">
+            <img src={capstone} className="capstone-pic"/>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

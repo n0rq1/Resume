@@ -290,3 +290,132 @@
   width: 150px;
   height: 150px;
 }
+
+.capstone-file {
+  width: 50%;
+  height: 65%;
+  background: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', monospace;
+}
+
+.capstone-file-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 100%; 
+}
+.capstone-pic {
+  padding-bottom: 5%;
+  max-width: 75%; 
+  max-height: 75%;
+  object-fit: contain;
+}
+
+
+
+
+@media screen and (max-width: 768px) { 
+  .headshot {
+    position: static; /* Remove absolute positioning */
+    width: 100px; /* Reduce size */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center the image */
+  }
+  
+  .taskbar {
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .taskbar-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .taskbar-clock {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .desktop-grid {
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+    top: 50px;
+    left: 20px;
+  }
+
+  .desktop-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .desktop-icon img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .contact-file, 
+  .about-file, 
+  .experience-file, 
+  .education-file,
+  .capstone-file {
+    width: 90%; /* Make popups scale */
+    height: auto;
+    max-height: 80%;
+  }
+
+  .capstone-pic {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  /* Adjustments for phones */
+  .taskbar {
+    height: 35px;
+    padding: 0 5px;
+  }
+
+  .taskbar-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .desktop-grid {
+    top: 40px;
+    left: 10px;
+    gap: 15px;
+  }
+
+  .desktop-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .desktop-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-file, 
+  .about-file, 
+  .experience-file, 
+  .education-file, 
+  .capstone-file {
+    width: 95%;
+    height: auto;
+    max-height: 75%;
+  }
+
+  .capstone-pic {
+    max-width: 85%;
+  }
+}
