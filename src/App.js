@@ -15,6 +15,7 @@ import squareIcon from './images/squares.png';
 import headshot from './images/headshot.jpeg';
 import capstoneIcon from './images/capstone.png';
 import capstone from './images/capstonePic.png';
+import courseworkIcon from './images/coursework.png';
 
 function App() {
   const [time, setTime] = useState('');
@@ -86,8 +87,14 @@ function App() {
         </div>
 
         <div className="desktop-icon" onClick={() => openApp('capstone')}>
-          <img src={capstoneIcon} alt="Contact" />
+          <img src={capstoneIcon} alt="Capstone" />
           <span>capstone.pdf</span>
+        </div>
+
+        <div className="desktop-icon" onClick={() => openApp('coursework')}>
+          <img src={courseworkIcon} alt="Coursework" />
+          <span>relevant-</span>
+          <span>courses.txt</span>
         </div>
 
       </div>
@@ -106,6 +113,7 @@ function App() {
               {app === 'experience' && <img src={expIcon} alt="Experience App" />}
               {app === 'research' && <img src={researchIcon} alt="Research App" />}
               {app === 'capstone' && <img src={capstoneIcon} alt="Capstone App" />}
+              {app === 'coursework' && <img src={courseworkIcon} alt="Coursework App" />}
             </div>
           ))}
         </div>
@@ -194,6 +202,19 @@ function App() {
           <div className="education-file-header">
             <span>capstone.pdf - Image Viewer</span>
             <img src={closeIcon} alt="Close" className="close-icon" onClick={() => closeApp('capstone')} />
+          </div>
+
+          <div className="capstone-file-content">
+            <img src={capstone} className="capstone-pic"/>
+          </div>
+        </div>
+      )}
+
+      {openApps.includes('coursework') && (
+        <div className="capstone-file">
+          <div className="education-file-header">
+            <span>capstone.pdf - Image Viewer</span>
+            <img src={closeIcon} alt="Close" className="close-icon" onClick={() => closeApp('coursework')} />
           </div>
 
           <div className="capstone-file-content">
