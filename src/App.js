@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import textIcon from './images/textIcon.png';
 import gradIcon from './images/education.png';
 import expIcon from './images/experience.png';
-import researchIcon from './images/research.png';
 import closeIcon from './images/closeIcon.png';
 import linkedIn from './images/linkedin-icon.png';
 import twitterIcon from './images/twitter.png';
@@ -77,10 +76,6 @@ function App() {
           <img src={expIcon} alt="Experience" />
           <span>experience.txt</span>
         </div>
-        <div className="desktop-icon" onClick={() => openApp('research')}>
-          <img src={researchIcon} alt="Research" />
-          <span>research.txt</span>
-        </div>
         <div className="desktop-icon" onClick={() => openApp('contact')}>
           <img src={emailIcon} alt="Contact" />
           <span>contact.txt</span>
@@ -89,12 +84,6 @@ function App() {
         <div className="desktop-icon" onClick={() => openApp('capstone')}>
           <img src={capstoneIcon} alt="Capstone" />
           <span>capstone.pdf</span>
-        </div>
-
-        <div className="desktop-icon" onClick={() => openApp('coursework')}>
-          <img src={courseworkIcon} alt="Coursework" />
-          <span>relevant-</span>
-          <span>courses.txt</span>
         </div>
 
       </div>
@@ -111,7 +100,6 @@ function App() {
               {app === 'about' && <img src={textIcon} alt="About App" />}
               {app === 'education' && <img src={gradIcon} alt="Education App" />}
               {app === 'experience' && <img src={expIcon} alt="Experience App" />}
-              {app === 'research' && <img src={researchIcon} alt="Research App" />}
               {app === 'capstone' && <img src={capstoneIcon} alt="Capstone App" />}
               {app === 'coursework' && <img src={courseworkIcon} alt="Coursework App" />}
             </div>
@@ -167,6 +155,13 @@ function App() {
           </div>
 
           <div className="experience-file-content">
+            <h3>Apprentice DevOps Engineer</h3>
+            <p>Liatrio</p>
+            <p>June 2025 - Present </p>
+            <p> ∙ 6 month long apprenticeship with Liatrio! </p>
+          </div>
+
+          <div className="experience-file-content">
             <h3>Technical Teaching Assistant</h3>
             <p>California State University, Chico</p>
             <p>January 2024 - June 2024 </p>
@@ -174,6 +169,7 @@ function App() {
             <p> ∙ Reviewed code and reports within the professor’s allocated timeline </p>
             <p> ∙ Assisted students in troubleshooting project issues by debugging code and clarifying concepts </p>
           </div>
+
         </div>
       )}
 
@@ -187,7 +183,7 @@ function App() {
           <div className="education-file-content">
             <h3>California State University, Chico</h3>
             <h3>Master of Science in Computer Science</h3>
-            <h3>August 2024 - May 2025</h3>
+            <h3>August 2024 - December 2025</h3>
             <br/>
             <h3>California State University, Chico</h3>
             <h3>Bachelor of Science in Computer Science</h3>
