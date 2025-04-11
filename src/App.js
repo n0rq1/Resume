@@ -158,16 +158,12 @@ function App() {
             <h3>Apprentice DevOps Engineer</h3>
             <p>Liatrio</p>
             <p>June 2025 - Present </p>
-            <p> ∙ 6 month long apprenticeship with Liatrio! </p>
           </div>
 
           <div className="experience-file-content">
             <h3>Technical Teaching Assistant</h3>
             <p>California State University, Chico</p>
             <p>January 2024 - June 2024 </p>
-            <p> ∙ Graded assignments for the graduate course Applied Computer Vision under Dr. Samuel B. Siewert </p>
-            <p> ∙ Reviewed code and reports within the professor’s allocated timeline </p>
-            <p> ∙ Assisted students in troubleshooting project issues by debugging code and clarifying concepts </p>
           </div>
 
         </div>

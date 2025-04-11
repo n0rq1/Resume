@@ -216,8 +216,8 @@
 }
 
 .experience-file {
-  width: auto;
-  height: auto;
+  width: 450px;
+  height: 400px;
   background: white;
   border: 1px solid black;
   position: absolute;
